@@ -48,7 +48,7 @@ setup(
 
     entry_points={
         'console_scripts': [
-            'activitytracker = activity.tracker.main'
+            'activitytracker = activitytracker.main:main'
         ],
         'activity.tracker': [
             'start = activitytracker.start:Start',
