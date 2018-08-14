@@ -1,5 +1,5 @@
-# exerciseTracker
-Excercise tracker created with Termux on Android, in Python.
+# activityTracker
+Time tracker created with Termux on Android, in Python.
 Background:
 I thought to try how my android phone could be used for programming. With my mobile phone I can try coding while commuting or waiting for something.
 I first tried QPython which is Python development tool for mobile phone. There was nothing wrong with QPython itself but I ran to problems with android’s security model. I was not able to connect my database from QPython code and I did not want to break security by rooting my phone.

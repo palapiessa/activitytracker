@@ -19,8 +19,8 @@ class ActivityApp(App):
             self.LOG.debug('got an error: %s', err)
             
 def main(argv=sys.argv[1:]):
-        myapp = ActivityApp()
-        return myapp.run(argv) 
+    myapp = ActivityApp()
+    return myapp.run(argv) 
     
 if __name__ == '__main__': 
     sys.exit(main(sys.argv[1:]))

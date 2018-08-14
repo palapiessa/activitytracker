@@ -1,0 +1,33 @@
+Created App with cliff framework
+	- Running 
+		 Python setup.py install
+	- Testing
+	  activitytracker start
+		Traceback (most recent call last):
+		  File
+"C:\ProgramData\Anaconda2\scripts\activitytracker-script.py", line 11, in
+<module>
+		    load_entry_point('activitytracker==0.1',
+'console_scripts', 'activitytracker')()
+		  File
+"C:\ProgramData\Anaconda2\lib\site-packages\pkg_resources\__init__.py", line
+570, in load_entry_point
+		    return get_distribution(dist).load_entry_point(group,
+name)
+		  File
+"C:\ProgramData\Anaconda2\lib\site-packages\pkg_resources\__init__.py", line
+2751, in load_entry_point
+		    return ep.load()
+		  File
+"C:\ProgramData\Anaconda2\lib\site-packages\pkg_resources\__init__.py", line
+2405, in load
+		    return self.resolve()
+		  File
+"C:\ProgramData\Anaconda2\lib\site-packages\pkg_resources\__init__.py", line
+2411, in resolve
+		    module = __import__(self.module_name,
+fromlist=['__name__'], level=0)
+		ImportError: No module named activitytracker.main
+	- See
+	  https://stackoverflow.com/questions/19718813/module-not-found-during-load-entry-point-in-python
+
