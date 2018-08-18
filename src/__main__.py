@@ -1,4 +1,4 @@
-mport sys
+import sys
 from activitytracker.main import main
 
 

@@ -5,7 +5,7 @@ PROJECT = 'activitytracker'
 # Change docs/sphinx/conf.py too!
 VERSION = '0.1'
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 try:
     long_description = open('README.rst', 'rt').read()
@@ -14,7 +14,7 @@ except IOError:
 
 setup(
     name=PROJECT,
-    version=VERSION,
+    version=0.1,
 
     description='Activity & time tracker app',
     long_description=long_description,
@@ -42,17 +42,16 @@ setup(
     provides=[],
     install_requires=['cliff'],
 
-    namespace_packages=[],
-    packages=find_packages(),
+    packages=['src'],
     include_package_data=True,
 
     entry_points={
         'console_scripts': [
-            'activitytracker = activitytracker.main:main'
+            'activitytracker = src.main:main'
         ],
         'activity.tracker': [
-            'start = activitytracker.start:Start',
-            'stop = activitytracker.stop:Stop',
+            'start = src.start:Start',
+            'stop = src.stop:Stop',
         ],
     },
 
