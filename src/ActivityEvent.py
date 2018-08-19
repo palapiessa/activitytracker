@@ -1,13 +1,13 @@
 from numbers import Number
 
 class ActivityEvent(): 
-    units=""
-    types=""
+    units=[]
+    types=[]
 
     def __init__(self, types, units): 
         self.units = units
         self.types = types
-
+        self.type = "" 
 
     @property
     def type(self):
