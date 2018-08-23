@@ -1,4 +1,5 @@
 from numbers import Number
+from Timer import Timer
 
 class ActivityEvent(): 
     units=[]
@@ -7,7 +8,8 @@ class ActivityEvent():
     def __init__(self, types, units): 
         self.units = units
         self.types = types
-        self.type = "" 
+        self.type = ""
+        self.timer = Timer()
 
     @property
     def type(self):
@@ -44,3 +46,10 @@ class ActivityEvent():
         else:
             raise ValueError("Unit is not correct, use "+str(units))
     
+    @property 
+    def timer(self):
+        return self.__timer
+
+    @timer.setter
+    def timer(self, timer):
+        self.__timer = timer

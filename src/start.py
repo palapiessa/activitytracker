@@ -25,7 +25,6 @@ class Start(Command):
         self.app.stdout.write('start '+ parsed_args.type + '\n')
         if not this.activity.type: 
             this.activity.type = parsed_args.type
-            this.timer= Timer() 
         else:
             self.app.stdout.write("Only one activity can be started per time.")
             
