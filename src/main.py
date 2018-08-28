@@ -9,7 +9,12 @@ class ActivityApp(App):
 
     def initialize_app(self, argv):
         self.LOG.debug("initialize app")
-        
+        # will be invoked after the main program arguments are parsed, 
+        # but before any command processing is performed and before
+        # the application enters interactive mode. 
+        # This hook is intended for opening connections to remote web services, databases, etc. using arguments passed to the main application.
+        # 
+
     def prepare_to_run_command(self, cmd):
         self.LOG.debug('prepare_to_run_command %s', cmd.__class__.__name__)
     
