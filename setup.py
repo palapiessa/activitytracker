@@ -50,7 +50,7 @@ setup(
             'activitytracker = src.main:main'
         ],
         'activity.tracker': [
-            'start = src.start-stop:StartStop',
+            'start = src.start:Start',
             #'stop = src.stop:Stop',
         ],
     },
